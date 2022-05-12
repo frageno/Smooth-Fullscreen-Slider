@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.buttons {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons .button {
+  margin: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.buttons .button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.slides {
+  -webkit-transition: all 1s ease-in-out .5s;
+  transition: all 1s ease-in-out .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.slides .slide {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  border-radius: 1rem;
+  background: #251D3A;
+  min-width: 100vw;
+  height: 100vh;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+.slides .slide .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slides .slide.active {
+  -webkit-transition: all 1s ease-in-out 1s;
+  transition: all 1s ease-in-out 1s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-radius: 0;
+}
+
+#slide_one, #slide_two, #slide_three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
